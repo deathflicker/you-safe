@@ -31,6 +31,14 @@
 		justify-content: center;
 		
 	}
+	.header{
+		left: 0%;
+		bottom: 0%;
+		display: none;
+		position: fixed;
+		color: white;
+		width: 1%;
+	}
 </style>
 </head>
 <body scroll="no" style="overflow: hidden">
@@ -54,8 +62,11 @@
 		<label style="color: rgba(255,255,255,0.7);"> &nbsp|&nbsp </label>
 		<label onclick="contactPage()" style="color: rgba(0,255,255,0.7);">Contact Us</label>
 		<label style="color: rgba(255,255,255,0.7);"> &nbsp|&nbsp </label>
-		<label style="color: rgba(0,255,255,0.7);">Share</label>
+		<label onclick="copyLink()" style="color: rgba(0,255,255,0.7);">Share</label>
 	</div>
+	<div id="header" class="header">
+	<input type="text" value="https://deathflicker.github.io/you-safe/" id="linkText" style="width: 1pt" style="background-color: black; color: black; border-color: black">
+</div>
 </div>
 
 
@@ -72,11 +83,11 @@
 	}
 
 	function parentAppLink(){
-		window.location.href='https://www.google.com'
+		window.location.href='https://drive.google.com/open?id=1IgCyKzR3TiyYZjYttJnbBKVuSKkFduoL'
 	}
 
 	function childAppLink(){
-		window.location.href='https://www.google.com'
+		window.location.href='https://drive.google.com/open?id=1_oRnV03DUr-AxoJ0KQvcFoowqXOD1DPd'
 	}
 
 
@@ -87,9 +98,19 @@
 		showMain.style.display='flex';
 	}
 
+	function copyLink(){
+		var container = document.getElementById('header');
+		var copyText = document.getElementById('linkText');
+		container.style.display='flex';
+		copyText.select();
+		document.execCommand("copy");
+		alert('Sharable link has been copied.\nYou can now paste it anywhere to share this Website.')
+		container.style.display='none';
+	}
 
 
-	setInterval(myFunction, 8000);
+
+	setInterval(myFunction, 0);
 </script>
 </body>
 </html>
