@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Mobile
+	</title>
+<style type="text/css">
+	body{
+		background-color: black;
+	}
+	.loadingScreen{
+		display: flex;
+		top: 0%;
+		left: 0%;
+		background-color: black;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		align-items: center;
+		justify-content: center;
+	}
+	.mainDiv{
+		display: none;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		top: 0%;
+		left: 0%;
+		align-items: center;
+		justify-content: center;
+		
+	}
+</style>
+</head>
+<body scroll="no" style="overflow: hidden">
+<meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
+/>
+
+<!--Loading Animation-->
+<div id="loadingScreen" class="loadingScreen">
+	<img src="loadingFinal.gif" width="50%" height="25%">
+
+</div>
+<!--Main Screen-->
+<div id="mainDiv" class="mainDiv">
+	<button onclick="childAppLink()" style="width: 45% ; height:10% ; border-radius: 16px ; font-size: 14px; border-color: red ; background-color: rgba(255,0,0,0.1); color: red; left: 30% ; top: 30%; position: fixed;">SAFE - Child's App</button>
+	<p></p>
+	<button onclick="parentAppLink()" style="width: 45% ; height:10% ; border-radius: 16px ; font-size: 14px; border-color: rgb(255,184,0) ; background-color: rgba(255,255,0,0.1); color: rgb(255,184,0); left: 30% ; top: 60%; position: fixed;">SAFE - Parent's App</button>
+	<div style="position: fixed; width: auto; bottom: 0%">
+		<label onclick="helpPage()" style="color: rgba(0,255,255,0.7);">Help</label>
+		<label style="color: rgba(255,255,255,0.7);"> &nbsp|&nbsp </label>
+		<label onclick="contactPage()" style="color: rgba(0,255,255,0.7);">Contact Us</label>
+		<label style="color: rgba(255,255,255,0.7);"> &nbsp|&nbsp </label>
+		<label style="color: rgba(0,255,255,0.7);">Share</label>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+// All the Scripts are below
+
+	function helpPage(){
+		window.location.href='m_help.html'
+	}
+
+	function contactPage(){
+		window.location.href="m_contact.html"
+	}
+
+	function parentAppLink(){
+		window.location.href='https://www.google.com'
+	}
+
+	function childAppLink(){
+		window.location.href='https://www.google.com'
+	}
+
+
+	function myFunction(){
+		var removeAnimation = document.getElementById('loadingScreen')
+		removeAnimation.style.display = 'none';
+		var showMain = document.getElementById('mainDiv')
+		showMain.style.display='flex';
+	}
+
+
+
+	setInterval(myFunction, 8000);
+</script>
+</body>
+</html>

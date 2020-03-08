@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Help Desk
+	</title>
+<style type="text/css">
+	body{
+		background-color: black;
+	}
+	.mainDiv{
+		position: relative;
+		background-color: black;
+		width: 100%;
+		height: 100%;
+		top: 0%;
+		left: 0%;
+	}
+	.header{
+		position: fixed;
+		width: 100%;
+		height: auto;
+		background-color: rgba(0,255,0,0.1);
+	}
+</style>
+</head>
+<body style="overflow-x: hidden">
+	<meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0' 
+/>
+
+
+<div id="mainDiv" class="mainDiv">
+	<div id="header" class="header">
+		<button onclick="backButtonHelp()" style="border-color: rgb(37,157,50) ; background-color: rgba(0,0,0,0) ; color: yellow ; width: 15% ; height: 7% ; font-size: 20px">back</button>
+	</div>
+	
+</div>
+<p style="color: white ; position: fixed; left: 2%">
+		<h1 style="color: rgb(13,202,205); padding-top: 20%">
+		SAFE - Child's App
+	</h1>
+	<h3 style="color: white">
+		Tap this button to download an app for your child's mobile. This app will work as a sender and hence will send locations / SMS alerts right from your childs device.
+	</h3>
+	<h1 style="color: rgb(13,202,205);">
+		SAFE - Parent's App
+	</h1>
+	<h3 style="color: white">
+		Download this app on your parents device. This app will let them see your live location or an alert will be sent from your phone to this app if something goes wrong.
+	</h3>
+	<h6 style="left: 0%; color: rgba(255,0,0,0.1); background-color: rgba(255,0,0,0.1); width: 100%;">&nbsp</h6>
+	<br>
+	<h2 style="color: rgb(255,207,0);">
+		Frequently asked questions
+	</h2>
+	<h3 style="color: white">
+		1) Is this app safe?
+	</h3>
+	<h4 style="color: rgb(255,106,0);">
+		Yes it is. We try keep your data as secure as possible. We never tend to show targeted apps based on your personal data that we have collected. But, it is always recommended to check the permissions before allowing them.
+	</h4>
+	<h3 style="color: white">
+		2) Is this app reliable?
+	</h3>
+	<h4 style="color: rgb(255,106,0);">
+		Give us a try. We won't say that we are faster than light but we do care about your beloved ones. In app notifications / SMS alerts will reach you as soon as your child shakes her phone.
+	</h4>
+	<h3 style="color: white">
+		3) Is this location correct?
+	</h3>
+	<h4 style="color: rgb(255,106,0);">
+		We will get your child's location through her cellphone's GPS. So, the location will be correct enough and the range of accuracy won't exceed 10m.
+	</h4>
+	<h3 style="color: white">
+		3) What if I don't have a smartphone?
+	</h3>
+	<h4 style="color: rgb(255,106,0);">
+		We didn't want to have a device barrier so our available not only for smart phones but you can also download the Desktop Client of our application.
+
+		<p style="color: lightblue">Note: For those who are using feature phones only. Please don't worry, we have implemented SMS alerts which doesn't require you to have none of the above devices.</p><br>
+		<p style="text-align: center; font-size: 10px; color: gray;">
+			©Arpan Bhattacharya 2020
+		</p>
+	</h4>
+</p>
+
+<script>
+	function backButtonHelp(){
+		window.location.href="m_download.html"
+	}
+</script>
+</body>
+</html>
