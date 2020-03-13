@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>
-		Mobile
+		Desktop
 	</title>
 <style type="text/css">
 	body{
@@ -49,14 +49,14 @@
 
 <!--Loading Animation-->
 <div id="loadingScreen" class="loadingScreen">
-	<img src="loadingFinal.gif" width="50%" height="25%">
+	<img src="loadingFinal.gif">
 
 </div>
 <!--Main Screen-->
 <div id="mainDiv" class="mainDiv">
-	<button onclick="childAppLink()" style="width: 45% ; height:10% ; border-radius: 16px ; font-size: 14px; border-color: red ; background-color: rgba(255,0,0,0.1); color: red; left: 30% ; top: 30%; position: fixed;">SAFE - Child's App</button>
+	<button onclick="childAppLink()" style="width: 45% ; height:10% ; border-radius: 16px ; font-size: 22px; border-color: red ; background-color: rgba(0,255,0,0.1); color: red; left: 30% ; top: 30%; position: fixed;">SAFE (installer)</button>
 	<p></p>
-	<button onclick="parentAppLink()" style="width: 45% ; height:10% ; border-radius: 16px ; font-size: 14px; border-color: rgb(255,184,0) ; background-color: rgba(255,255,0,0.1); color: rgb(255,184,0); left: 30% ; top: 60%; position: fixed;">SAFE - Parent's App</button>
+	<button onclick="parentAppLink()" style="width: 45% ; height:10% ; border-radius: 16px ; font-size: 22px; border-color:lightgreen ; background-color: rgba(255,255,0,0.1); color: lightgreen; left: 30% ; top: 60%; position: fixed;">SAFE (msi)</button>
 	<div style="position: fixed; width: auto; bottom: 0%">
 		<label onclick="helpPage()" style="color: rgba(0,255,255,0.7);">Help</label>
 		<label style="color: rgba(255,255,255,0.7);"> &nbsp|&nbsp </label>
@@ -75,19 +75,19 @@
 // All the Scripts are below
 
 	function helpPage(){
-		window.location.href='m_help.html'
+		window.location.href='d_help.html'
 	}
 
 	function contactPage(){
-		window.location.href="m_contact.html"
+		window.location.href="d_contact.html"
 	}
 
 	function parentAppLink(){
-		window.location.href='https://drive.google.com/open?id=1IgCyKzR3TiyYZjYttJnbBKVuSKkFduoL'
+		window.location.href='https://drive.google.com/file/d/1vTPwkMiro1_74X8LYcxcAfuJpcBbmu-H/view?usp=sharing'
 	}
 
 	function childAppLink(){
-		window.location.href='https://drive.google.com/open?id=1_oRnV03DUr-AxoJ0KQvcFoowqXOD1DPd'
+		window.location.href='https://drive.google.com/file/d/1H04nvGfgs66Fy3eVF6nWZYODQy1wqL2_/view?usp=sharing'
 	}
 
 
